@@ -3,10 +3,10 @@ let numero2 = document.querySelector('#numero2') as HTMLInputElement;
 let botao = document.querySelector('#calcular');
 let res = document.querySelector('.resultado');
 
-function calcular(n1, n2){
+function calcular(n1: number, n2: number) {
     return n1 + n2;    
 }
 
 botao.addEventListener('click', ()=>{
-    res.innerHTML = calcular(numero1.value, numero2.value);
+    res.innerHTML = calcular( +numero1.value, +numero2.value).toString();
 });

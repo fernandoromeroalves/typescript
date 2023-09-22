@@ -6,5 +6,5 @@ function calcular(n1, n2) {
     return n1 + n2;
 }
 botao.addEventListener('click', function () {
-    res.innerHTML = calcular(numero1.value, numero2.value);
+    res.innerHTML = calcular(+numero1.value, +numero2.value).toString();
 });
